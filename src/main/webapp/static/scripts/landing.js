@@ -21,7 +21,6 @@ document.getElementById("fflogs-url-button").addEventListener("click", function(
 
 
 let baseUrl = "https://www.fflogs.com:443/v1";
-let apiKey = "10f91b492ae12f54cc9cf487b687d791";
 
 function buildMain(url){
 
