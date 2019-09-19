@@ -7,7 +7,11 @@
     <title>Project 1</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/Project1/static/css/project1.css">
+    <!--Maven StyleSheet
+    <link rel="stylesheet" type="text/css" href="/fflogs-thing/static/css/styles.css">
+    -->
+    <!--Local Testing-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
     <link rel="icon" href="https://discordemoji.com/assets/emoji/ConcernedFroge.png">
     <link rel="shortcut icon" href="#" />
@@ -22,6 +26,71 @@
 
 <body id="landing-body">
 
-    <h4>Testing Maven Deployment</h4>
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-4 p-0 landing-sidebar">
+
+                <nav class="navbar navbar-light" aria-labelledby="sidebar-report-nav-aria" id="sidebar-report-nav" hidden>
+
+                    <div class="navbar-header">
+
+                        <a id="sidebar-report-nav-header" class="navbar-brand landing-navbar-head"></a>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav" id="sidebar-report-nav-entries">
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="col-8 p-0 landing-main">
+
+                <div class="jumbotron min-vh-100 m-0 bg-light d-flex flex-column justify-content-center">
+
+                    <div id="fflogs-url-div">
+
+                        <div class="form-group col-9 offset-1 mb-3">
+
+                            <div class="input-group">
+
+                                <input type="url" class="form-control" placeholder="https://www.fflogs.com/reports/..." aria-label="FFlogs URL" aria-describedby="fflogs-url-aria" id="fflogs-url-input">
+
+                                <div class="input-group-append">
+                                
+                                    <button class="btn btn-danger" type="button" id="fflogs-url-button">Bully Me</button>
+                                
+                                </div>
+
+                            </div>
+
+                            <small id="fflogs-url-error-message" class="form-text text-danger" hidden>Invalid report URL</small>
+
+                        </div>
+
+                    </div>
+
+                    <div id="fflogs-report-fights-div" hidden>
+                    </div>
+
+                    <div id="fflogs-analysis-div" hidden>
+                    </div>
+
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!--Maven Script Location
+    <script type="text/javascript" href="/fflogs-thing/static/scripts/landing.js"></script>
+    -->
+
+    <script type="text/javascript" src="../scripts/landing.js"></script>
 
 </body>
